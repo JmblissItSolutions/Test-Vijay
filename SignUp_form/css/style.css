@@ -1,0 +1,174 @@
+@import "custom.css";
+@import url('myresponsive.css');
+
+
+@font-face{
+		font-family: TitilliumWeb-Regular;
+		src: url("../fonts/TitilliumWeb-Regular.ttf");
+}
+@font-face{
+		font-family: Montserrat-Bold;
+		src: url("../fonts/Montserrat-Bold.otf");
+}
+
+/*comon css for sign up and login*/
+.form_sec {
+    display: none;
+}
+
+.form_box {
+    	max-width: 700px;
+    	background: #23323d;
+    	margin: 80px auto;
+    	padding: 40px;
+    	box-sizing: border-box;
+    	border-radius: 5px;
+    	box-shadow: 0 0 10px #5f5d5d;
+    	font-size: 18px;
+}
+/*end of form box wrapper*/
+.tab_btn {
+    margin-bottom: 40px;
+}
+
+.tab_btn ul:after {
+		content: "";
+		clear: both;
+		display: block;
+}	
+.tab_btn li {
+    	float: left;
+    	width: 50%;
+}
+.tab_btn li a{
+		background: #43515a;
+		display: block;
+		padding: 15px 10px;
+		text-align: center;
+		color: #bcb8b5;	
+}
+.tab_btn li.active a {
+		background: #19aa82;
+		color: #fff;
+}
+
+.tab_btn li a:hover{
+		background:#159b77;
+		color: #fff;
+}
+/*--end of tab button--*/
+.form_sec h1 {
+   		text-align: center;
+   		color: #fff;
+    	font-weight: normal;
+    	margin-bottom: 40px;
+}
+/*end of form heading*/
+
+.clear_box {
+    	margin: 0 -15px;
+}
+.clear_box:after{
+		display: block;
+		clear: both;
+		content: "";
+}
+
+.col_6 {
+    	width: 50%;
+    	float: left;
+    	padding: 0 15px;
+    	box-sizing: border-box;
+}
+
+.field_box{
+		margin-bottom: 30px;
+}
+
+.field_box input,
+.field_box select,
+.field_box textarea{
+    	width: 100%;
+    	border-width: 1px;
+    	border-style: solid;
+    	background: transparent;
+    	font-size: 20px;
+    	padding: 10px 15px;    	
+   		box-sizing: border-box;
+        font-family: TitilliumWeb-Regular;
+        text-transform: capitalize;
+}
+.field_box textarea{
+		height: 200px;
+}
+
+.button_box input[type="submit"] {
+    	width: 100%;
+    	border: 0;
+    	font-size: 40px;
+    	text-transform: uppercase;
+    	letter-spacing: 2px;
+    	font-family: Montserrat-Bold;
+    	padding: 12px 15px;
+    	background: #19af86;
+    	color: #fff;
+    	cursor: pointer;
+}
+
+.button_box input[type="submit"]:hover{
+		background: #1fcc9c;
+}
+
+.fgt_pass {
+    	padding: 15px 0 0;
+    	text-align: right;
+}
+.block_bx {
+   		display: block;
+}
+
+/*end of form styling*/
+
+/*start media query*/
+
+ @media (max-width:480px){
+    .form_box {
+        margin: 40px auto;
+        padding: 40px 20px;   
+        font-size: 15px;
+    }
+
+   .form_sec h1 { 
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+
+    .tab_btn {
+        margin-bottom: 30px;
+    }
+    .col_6 {   
+        padding: 0 5px;
+   }
+
+   .clear_box {
+        margin: 0 -5px;
+   }
+
+   .field_box {
+        margin-bottom: 20px;
+   }
+
+   .field_box input,
+   .field_box select,
+   .field_box textarea{
+        font-size: 15px;
+   }
+
+   .button_box input[type="submit"]{
+        font-size: 20px;
+   }
+}
+
+
+
+
